@@ -1,0 +1,372 @@
+/* TEMPLATE STYLESHEET */
+
+
+/* These are some suggested groupings for your stylesheet... */
+
+/* Default styling styling for the body.*/
+
+body {
+    font-family: 'Roboto',
+    'Source Sans Pro',
+    'Roboto Condensed',
+    sans-serif;
+    /* update with Google font, web safe font and generic fallback */
+    font-size: 100%; /* the default browser font size is 16px */
+    line-height: 1 ; /* update to suit your type choices */
+    color: #000;  /* base text colour - update to suit your design */
+    
+background-image: url(../images/scifitunnel05.mp4);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+background-blend-mode: multiply;
+
+
+text-align: center;
+align-items: center;
+align-content: center;
+padding:0;
+margin:0;
+  }
+
+/* Improves default font styles for forms  */
+
+input,
+textarea {
+    font-family: 'Roboto', 'Source Sans Pro','Roboto Condensed', sans-serif; /* update with Google font, web safe font and generic fallback */
+}
+
+/* box sizing */
+div {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* flexible content images code */
+.img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* element styling (e.g. standard p, h1, h2, a, etc) */
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+p {
+  font-size: 1rem;
+    max-width: 585px;
+    font-family: 'Roboto';
+}
+
+/* navigation (using flexbox) */
+
+.topnav {
+  overflow: hidden;
+  
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 1rem;
+}
+
+.topnav a:hover {
+  
+  color: #669db3ff
+}
+
+.topnav a.active {
+  
+  color: #669db3ff
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  div#myTopnav.topnav {
+    margin: 0px;
+    position: fixed;
+    width: 100%;
+  }
+}
+
+#myTopnav {
+  transition: top 0.3s;
+  background-color: white;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* page header */
+.page-header {
+    background-color:grey;
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/keyboard.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+}
+
+.display-flex {
+  height: 90vh;
+  min-height: 40vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-content {
+  max-width: 500px;
+  font-size: 1.35rem;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.header-content h1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 0 #000;
+  margin-bottom: .5rem;
+  line-height: 1;
+}
+
+.header-content p {
+  font-size: 1.5rem;
+}
+
+
+.header-content a {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 10px 20px;
+  background: white;
+  color: black;
+  border-radius: 0.2em;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* main layout */
+.titlepadding {
+  padding-top:1rem;
+}
+
+.padding {
+  margin-bottom:1rem;
+}
+/* styling for the section content */
+
+section {
+    padding-top:-1.25rem;
+    padding-bottom:-1.25rem;
+    margin-top:-1.25rem;
+    margin-bottom:-1.25rem;
+}
+
+
+ @media only screen and (min-width: 600px) {
+   /*desktop css*/
+ .drop-shadow {
+   padding:0px;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 65%;
+   height: 100%;
+   box-shadow: 0px 20px 30px 20px #9b9b9b;
+ }
+  }
+
+/* background colours for sections */
+.about-me {
+  background-color: white;
+  padding-bottom:20px;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.about-me p {
+  padding-bottom: 13px;
+}
+
+.work-experience {
+  background-color: #669db3ff;
+  color: white;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.image-gallery {
+  background-color: white;
+  padding:0 3rem;
+}
+
+.contact-me {
+  background-color: #669db3ff;
+  color: white;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+/* image gallery media queries and size overrides */
+
+@media screen and (min-width: 750px) {
+
+.image-gallery .an-image+.an-image {
+  margin-left: 20px;
+}
+
+.image-gallery .an-image {
+  flex: 33%;
+  padding: 20px;
+}
+}
+.image-gallery .container-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.image-gallery h2 {
+  text-align: center;
+}
+
+.image-gallery .an-image {
+  margin: 0;
+}
+
+.image-gallery .image-caption {
+  padding: 8px 0 50px 0;
+}
+
+/* form styling */
+
+form label {
+  display: block;
+  /* instead of inline */
+  padding-bottom: 0.2em;
+  padding-top: 1em;
+}
+
+form input,
+form textarea {
+  padding: 0.4em 0.3em;
+    font-size: 1.5em;
+      font-family: arial,
+      helvetica,
+      sans-serif;
+        border: 1px solid #bbb;
+        border-radius: 0.2em;
+          min-width: 90%;
+          max-width: 90%;
+          }
+
+          form input[type="submit"] {
+            min-width: 0;
+              background-color: #669db3ff;
+              border: 0;
+              border-radius: 0.2em;
+              padding: 13px 30px;
+              margin-top: 10px;
+              /* top and bottom, left and right */
+              font-size: 1em;
+              text-transform: uppercase;
+              font-weight: bold;
+              color: white;
+                transition: background-color 0.2s ease;
+                }
+                form input[type="submit"]:hover {
+                  background-color: white;
+                  color:#669db3ff;
+                }
+/* footer */
+/* make it urself :) */
+.page-footer {
+
+}
+
+.footer {
+  position: relative;
+  text-align: center;
+}
+
+.footer-break-design {
+  border: solid black 3px;
+  border-bottom: none;
+  width: 25%;
+  margin: 10px auto;
+}
+
+.contact-icons {
+  margin: 1rem;
+  margin-bottom: 0.25rem;
+  height: 2rem;
+  width: 2rem;
+}
+
+.House {
+  position: relative;
+}
+
+#fixedbutton {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+a:link {}
+
+a:visited {}
+
+a:focus {}
+
+a:hover {}
+
+a:active {}
+
+/* create CSS that will be used by the HTML inserted by the JavaScript */
+
+
+form input[type="submit"].js-disable-button {
+  color: grey;
+  padding-left: 24px;
+  background: white url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/923354/Rolling-1s-18px.gif) left center no-repeat;
+}
+
