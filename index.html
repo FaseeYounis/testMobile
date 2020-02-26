@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-
+<link rel="icon" href="images/favicon.ico">
     <!-- meta tags for Internet Explorer and mobile devices -->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,8 +14,7 @@
 
     <!-- your stylesheet and any other styling code, e.g. google fonts -->
     <link rel="stylesheet" href="css/layout.css">
-<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Source+Sans+Pro&display=swap"
-    rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Source+Sans+Pro&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -48,11 +47,11 @@
 
                 <h2 class="titlepadding">About Me</h2>
                 <!-- add your 150 word maximum About Me content here -->
-                Whenever I think of the word ‘technology’ I always associate it with the future. I believe that in our current
+               <p> Whenever I think of the word ‘technology’ I always associate it with the future. I believe that in our current
                 generation technology has been a great asset in the way we learn, the way we teach, and in the way we go about our daily
                 life. There has been an extraordinary number of advances in technology in the past few decades and there are no signs of
                 this slowing down. The idea of virtual reality over 50 years ago would feel like a dream, yet here we are with such a
-                creation, to be in our world and experiencing another is an amazing notion.
+                creation, to be in our world and experiencing another is an amazing notion. </p>
             <!-- <p>01234567890123456789012345678901234567890123456789012345678912345</p> -->
             </div>
         </section>
@@ -64,7 +63,7 @@
                 <!-- add your 200 word maximum work experience content here -->
 
     <h3>Strasys, London (Aug 2018 - Sep 2018)</h3>
-    <ulp>I worked as an Analyst for a niche strategy consultancy. My role was to support client projects conducting
+    <p>I worked as an Analyst for a niche strategy consultancy. My role was to support client projects conducting
         financial and strategic analysis. This required me to rapidly understand how to read and analyse financial
         statements and produce
         succinct reports. My brief was to help understand the drivers of performance for an NHS hospital. Furthermore, I
@@ -145,20 +144,31 @@
 <br/>
     <footer class="page-footer">
      
-    <div className="contact-details" id="contact"> 
-        <a href = "https://twitter.com/FaseeYounis" target="blank" rel="noopener noreferrer"><img className="contact-icons" src="https://img.icons8.com/android/30/000000/twitter.png" alt="twitter"></img></a>
- <a href = "https://www.instagram.com/f.youniss/" target="blank" rel="noopener noreferrer"><img className="contact-icons" src="https://img.icons8.com/ios-filled/30/000000/instagram-new.png" alt="instagram"></img></a>
- <a href = "https://www.linkedin.com/company/fujitsu" target="blank" rel="noopener noreferrer"><img className="contact-icons" src="https://img.icons8.com/metro/30/000000/linkedin.png" alt="linkedin"></img></a>
- <a href = "https://app.slack.com/client/TNJDMKN6M/CNDC0QY8K" target="blank" rel="noopener noreferrer"><img className="contact-icons" id="fixedbutton" src="https://img.icons8.com/ios-glyphs/30/000000/slack-new.png" alt="slack"></img></a>
- <div className="footer">
+    <div class="contact-details"> 
+        <a href = "https://twitter.com/FaseeYounis" target="blank" rel="noopener noreferrer"><img class="contact-icons" src="https://img.icons8.com/android/30/000000/twitter.png" alt="twitter"></a>
+ <a href = "https://www.instagram.com/f.youniss/" target="blank" rel="noopener noreferrer"><img class="contact-icons" src="https://img.icons8.com/ios-filled/30/000000/instagram-new.png" alt="instagram"></a>
+ <a href = "https://www.linkedin.com/company/fujitsu" target="blank" rel="noopener noreferrer"><img class="contact-icons" src="https://img.icons8.com/metro/30/000000/linkedin.png" alt="linkedin"></a>
+ <div class="footer">
         <div class="footer-content">
-            <hr className="footer-break-design" />
+            <hr class="footer-break-design" />
             <p> <span class="footer-text"> &copy; <a href="http://www.mmu.ac.uk/" title="MMU homepage">MMU 2020</a></span> 
                 <span
                     class="footer-separator">&middot;</span> <span class="footer-text">This is student coursework</span> <span class="footer-separator">&middot;</span> <span class="footer-text">Tutor <a href="mailto:d.j.wilson@mmu.ac.uk">Derren Wilson</a></span> <span class="footer-separator">&middot;</span>                    <span class="footer-text">
      <a href="http://validator.w3.org/check?uri=referer" title="W3C HTML Validation Service" >Valid HTML</a></span> </p>
-        </div>
-   <hr className = "footer-break-design"/>
+    <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                alt="Valid CSS!" />
+        </a>
+    </p>
+    <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss"
+                alt="Valid CSS!" />
+        </a>
+    </p>
+    </div>
+   <hr class = "footer-break-design"/>
 &copy; 2020 Crewjitsu.
    <br />
    <br />
@@ -226,7 +236,7 @@
             var getButton = document.querySelector('form input[type="submit"]');
             getButton.onclick = changeButtonAndSendIfValid;
 
-    function myFunction() {
+  function myFunction() {
         var x = document.getElementById("myTopnav");
         if (x.className === "topnav") {
             x.className += " responsive";
@@ -241,10 +251,10 @@
             if (prevScrollpos > currentScrollPos) {
                 document.getElementById("myTopnav").style.top = "0";
             } else {
-                document.getElementById("myTopnav").style.top = "-300px";
+                document.getElementById("myTopnav").style.top = "0";
             }
             prevScrollpos = currentScrollPos;
-        }
+        } 
 
 </script>
 </body>

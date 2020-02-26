@@ -20,8 +20,6 @@ background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
 background-blend-mode: multiply;
-
-
 text-align: center;
 align-items: center;
 align-content: center;
@@ -37,15 +35,13 @@ textarea {
 }
 
 /* box sizing */
-div {
-  max-width: 600px;
-  margin: 0 auto;
-}
+
 
 /* flexible content images code */
 .img {
-    max-width: 100%;
-    height: auto;
+  width:100%;
+  height:auto;
+    border: 3px solid #325967;
 }
 
 /* element styling (e.g. standard p, h1, h2, a, etc) */
@@ -61,7 +57,6 @@ h2 {
 
 p {
   font-size: 1rem;
-    max-width: 585px;
     font-family: 'Roboto';
 }
 
@@ -69,28 +64,28 @@ p {
 
 .topnav {
   overflow: hidden;
-  
+ max-width: 600px;
+ margin: 0 auto;
 }
 
 .topnav a {
   float: left;
   display: block;
-  color: black;
+  color: #325967;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  padding: 1rem;
 }
 
 .topnav a:hover {
-  
-  color: #669db3ff
+  background-color: #325967;
+  color: white;
 }
 
 .topnav a.active {
-  
-  color: #669db3ff
+  background-color: #325967;
+  color: white;
 }
 
 .topnav .icon {
@@ -102,7 +97,12 @@ p {
   .topnav a.icon {
     float: right;
     display: block;
+    height: 17px;
   }
+  .topnav a.icon:hover {
+    background-color: white;
+  }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -119,14 +119,14 @@ p {
   }
   div#myTopnav.topnav {
     margin: 0px;
-    position: fixed;
     width: 100%;
   }
-}
+} 
 
 #myTopnav {
   transition: top 0.3s;
   background-color: white;
+  max-width: 600px;
 }
 html {
   scroll-behavior: smooth;
@@ -148,8 +148,8 @@ html {
 .display-flex {
   height: 90vh;
   min-height: 40vh;
-  align-items: center;
-  justify-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .header-content {
@@ -178,7 +178,7 @@ html {
   margin-right: 10px;
   padding: 10px 20px;
   background: white;
-  color: black;
+  color: #325967;
   border-radius: 0.2em;
   text-decoration: none;
   font-weight: bold;
@@ -188,6 +188,7 @@ html {
 /* main layout */
 .titlepadding {
   padding-top:1rem;
+  margin-bottom: 1.5rem;
 }
 
 .padding {
@@ -195,43 +196,43 @@ html {
 }
 /* styling for the section content */
 
-section {
-    padding-top:-1.25rem;
-    padding-bottom:-1.25rem;
-    margin-top:-1.25rem;
-    margin-bottom:-1.25rem;
-}
 
-
- @media only screen and (min-width: 600px) {
+ @media only screen and (min-width: 750px) {
    /*desktop css*/
  .drop-shadow {
    padding:0px;
    margin-left: auto;
    margin-right: auto;
-   max-width: 65%;
+   max-width: 70%;
    height: 100%;
    box-shadow: 0px 20px 30px 20px #9b9b9b;
- }
+ } 
+
   }
 
 /* background colours for sections */
 .about-me {
   background-color: white;
   padding-bottom:20px;
-  padding-right: 1rem;
-  padding-left: 1rem;
+   padding-right: 20%;
+   padding-left: 20%;
+
 }
 
 .about-me p {
-  padding-bottom: 13px;
+  text-align: left;
 }
 
 .work-experience {
-  background-color: #669db3ff;
+  background-color: #325967;
   color: white;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding-right: 20%;
+  padding-left: 20%;
+
+}
+
+.work-experience p {
+  text-align: left;
 }
 
 .image-gallery {
@@ -239,11 +240,42 @@ section {
   padding:0 3rem;
 }
 
+.image-gallery p {
+  text-align: center;
+}
+
+@media screen and (min-width: 750px) {
+  .contact-me {
+    background-color: #325967;
+    color: white;
+    text-align: left;
+    padding-right: 20%;
+    padding-left: 20%;
+  }
+}
+@media screen and (max-width: 750px) {
 .contact-me {
-  background-color: #669db3ff;
+  background-color: #325967;
+  color: white;
+  text-align: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.about-me {
+  background-color: white;
+  padding-bottom: 20px;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.work-experience {
+  background-color: #325967;
   color: white;
   padding-right: 1rem;
   padding-left: 1rem;
+}
+}
+.contact-me h2 {
+  text-align: center;
 }
 
 /* image gallery media queries and size overrides */
@@ -254,15 +286,19 @@ section {
   margin-left: 20px;
 }
 
+ .image-gallery .image-container {
+   display: flex;
+ }
+
 .image-gallery .an-image {
   flex: 33%;
   padding: 20px;
 }
 }
 .image-gallery .container-content {
-  max-width: 1200px;
-  margin: 0 auto;
-}
+   max-width: 1200px;
+   margin: 0 auto;
+} 
 
 .image-gallery h2 {
   text-align: center;
@@ -270,11 +306,13 @@ section {
 
 .image-gallery .an-image {
   margin: 0;
+
 }
 
 .image-gallery .image-caption {
   padding: 8px 0 50px 0;
 }
+
 
 /* form styling */
 
@@ -300,7 +338,7 @@ form textarea {
 
           form input[type="submit"] {
             min-width: 0;
-              background-color: #669db3ff;
+              background-color: #325967;
               border: 0;
               border-radius: 0.2em;
               padding: 13px 30px;
@@ -314,12 +352,12 @@ form textarea {
                 }
                 form input[type="submit"]:hover {
                   background-color: white;
-                  color:#669db3ff;
+                  color: #325967;
                 }
 /* footer */
 /* make it urself :) */
 .page-footer {
-
+text-align: center;
 }
 
 .footer {
@@ -328,38 +366,21 @@ form textarea {
 }
 
 .footer-break-design {
-  border: solid black 3px;
+  border: solid #325967 1px;
   border-bottom: none;
-  width: 25%;
+  width: 100%;
   margin: 10px auto;
 }
 
 .contact-icons {
-  margin: 1rem;
-  margin-bottom: 0.25rem;
+  margin-top: -1rem;
   height: 2rem;
   width: 2rem;
 }
 
-.House {
-  position: relative;
+div.footer-content p {
+  text-align: center;
 }
-
-#fixedbutton {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-}
-
-a:link {}
-
-a:visited {}
-
-a:focus {}
-
-a:hover {}
-
-a:active {}
 
 /* create CSS that will be used by the HTML inserted by the JavaScript */
 
