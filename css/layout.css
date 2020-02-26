@@ -12,10 +12,9 @@ body {
     sans-serif;
     /* update with Google font, web safe font and generic fallback */
     font-size: 100%; /* the default browser font size is 16px */
-    line-height: 1 ; /* update to suit your type choices */
+    line-height: 1.4; /* update to suit your type choices */
     color: #000;  /* base text colour - update to suit your design */
-    
-background-image: url(../images/scifitunnel05.mp4);
+background-color: white;
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
@@ -338,7 +337,7 @@ form textarea {
 
           form input[type="submit"] {
             min-width: 0;
-              background-color: #325967;
+              background-color: #1c4242;
               border: 0;
               border-radius: 0.2em;
               padding: 13px 30px;
@@ -376,6 +375,8 @@ text-align: center;
   margin-top: -1rem;
   height: 2rem;
   width: 2rem;
+  margin-left:1rem;
+  margin-right:1rem;
 }
 
 div.footer-content p {
