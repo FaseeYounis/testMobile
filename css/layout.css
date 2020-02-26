@@ -25,13 +25,6 @@ align-content: center;
 padding:0;
 margin:0;
   }
-
-  @media screen and (max-width: 600px) {
-    body {
-      overflow-x: hidden;
-      /* Hide horizontal scrollbar */
-    }
-  }
 /* Improves default font styles for forms  */
 
 input,
@@ -108,9 +101,11 @@ p {
     background-color: white;
   }
 
-}
+   body {
+     overflow-x: hidden;
+     /* Hide horizontal scrollbar */
+   }
 
-@media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -202,18 +197,7 @@ html {
 /* styling for the section content */
 
 
- @media only screen and (min-width: 750px) {
-   /*desktop css*/
- .drop-shadow {
-   padding:0px;
-   margin-left: auto;
-   margin-right: auto;
-   max-width: 70%;
-   height: 100%;
-   box-shadow: 0px 20px 30px 20px #9b9b9b;
- } 
 
-  }
 
 /* background colours for sections */
 .about-me {
@@ -257,6 +241,28 @@ html {
     padding-right: 20%;
     padding-left: 20%;
   }
+
+   .drop-shadow {
+     padding: 0px;
+     margin-left: auto;
+     margin-right: auto;
+     max-width: 70%;
+     height: 100%;
+     box-shadow: 0px 20px 30px 20px #9b9b9b;
+   }
+
+   .image-gallery .an-image+.an-image {
+     margin-left: 20px;
+   }
+
+   .image-gallery .image-container {
+     display: flex;
+   }
+
+   .image-gallery .an-image {
+     flex: 33%;
+     padding: 20px;
+   }
 }
 @media screen and (max-width: 750px) {
 .contact-me {
@@ -285,21 +291,6 @@ html {
 
 /* image gallery media queries and size overrides */
 
-@media screen and (min-width: 750px) {
-
-.image-gallery .an-image+.an-image {
-  margin-left: 20px;
-}
-
- .image-gallery .image-container {
-   display: flex;
- }
-
-.image-gallery .an-image {
-  flex: 33%;
-  padding: 20px;
-}
-}
 .image-gallery .container-content {
    max-width: 1200px;
    margin: 0 auto;
@@ -361,6 +352,10 @@ form textarea {
                 }
 /* footer */
 /* make it urself :) */
+.footer-padding {
+  padding-bottom:1rem;
+}
+
 .page-footer {
 text-align: center;
 }
