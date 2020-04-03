@@ -203,10 +203,6 @@ html {
 }
 
 /* styling for the section content */
-
-
-
-
 /* background colours for sections */
 .about-me {
   background-color: white;
@@ -234,7 +230,7 @@ html {
 
 /* visited link */
 .href-design:visited {
-  color: gray;
+  color: white;
 }
 
 /* mouse over link */
@@ -290,7 +286,7 @@ html {
     flex: 25%;
     padding: 20px;
   }
-
+ /* code below is used to make the navbar have an underline animation, it's taken from https://codepen.io/mehi/pen/MyWqPM */
   .underlineNav::after {
     content: '';
     display: block;
@@ -422,6 +418,15 @@ form input[type="submit"]:hover {
 
 /* footer */
 /* make it urself :) */
+
+hr {
+  border-bottom: 10px dotted #325967;
+  width: 40px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
 .footer-padding {
   padding-bottom: 1rem;
 }
@@ -439,8 +444,8 @@ form input[type="submit"]:hover {
 .contact-icons {
   height: 2rem;
   width: 2rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 div.footer-content p {

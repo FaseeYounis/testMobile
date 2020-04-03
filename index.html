@@ -10,7 +10,9 @@
 
     <!-- meta tags data for good SEO -->
     <title>Fasee Younis</title>
-    <meta name="description" content="A website about Fasee Younis and his work.">
+    <meta name="keywords" content="developer, apprentice, Fasee, Fujitsu, software, programming, Manchester">
+    <meta name="author" content="Fasee Younis">
+    <meta name="description" content="A website about Fasee Younis and his work. If you're interested about the life of an Apprentice Software Developer in Manchester, visit this site to learn more.">
 
     <!-- your stylesheet and any other styling code, e.g. google fonts -->
     <link rel="stylesheet" href="css/layout.css">
@@ -39,7 +41,7 @@
         <main>
             <header class="page-header">
                 <div class="header-content">
-                    <img class="FaseePic img" src="images/FASEE.jpg">
+                    <img class="FaseePic img" src="images/FASEE.jpg" alt="A picture of Fasee.">
                     <h1>Fasee Younis</h1>
                     <p><em>Software Developer</em></p>
                     <p><a href="#contact">Contact me</a></p>
@@ -182,16 +184,24 @@
                 <div class="footer">
                     <div class="footer-content">
                         <hr />
-                        <a href="http://validator.w3.org/check?uri=referer" title="W3C HTML Validation Service">Valid
-                            HTML</a></span> </p>
 
                         <a href="http://jigsaw.w3.org/css-validator/check/referer">
                             <img style="border:0;width:88px;height:31px"
                                 src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" />
                         </a>
+
+
                     </div>
                     <hr />
-                    <p class="footer-padding">&copy; 2020 Crewjitsu.</p>
+                    <p class="footer-padding">
+                        <span class="footer-text">© <a href="http://www.mmu.ac.uk/" title="MMU homepage">MMU
+                                2020</a></span>
+                        <span class="footer-separator">·</span> <span class="footer-text">This is student
+                            coursework</span> <span class="footer-separator">·</span> <span class="footer-text">Tutor <a
+                                href="mailto:d.j.wilson@mmu.ac.uk">Derren Wilson</a></span> <span
+                            class="footer-separator">·</span> <span class="footer-text">
+                            <a href="http://validator.w3.org/check?uri=referer"
+                                title="W3C HTML Validation Service">Valid HTML</a></span> </p>
 
                 </div>
             </div>
@@ -256,7 +266,8 @@
         var getButton = document.querySelector('form input[type="submit"]');
         getButton.onclick = changeButtonAndSendIfValid;
 
-        // code below taken from W3Schools
+        /* code below taken from W3Schools https://www.w3schools.com/howto/howto_js_topnav_responsive.asp (allows the
+        hamburger menu to dropdown into a list of buttons for navigation) */
 
         function myFunction() {
             var x = document.getElementById("myTopnav");
